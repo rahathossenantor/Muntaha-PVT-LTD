@@ -1,9 +1,12 @@
 import { Outlet } from "react-router-dom";
+import Navigation from "./components/Navigation";
 
 const App = () => {
   return (
     <>
-    <Outlet></Outlet>
+      <Navigation mainContent={
+        <Outlet></Outlet>
+      } />
     </>
   );
 };
